@@ -1,9 +1,18 @@
-
-var MongoClient = require('../../../root/node_modules/mongodb').MongoClient;
-
-var uri = "mongodb://m001-student:m001-mongodb-basics@sandbox-shard-00-00.sppfg.mongodb.net:27017/sample_airbnb?ssl=true&replicaSet=atlas-b5vzke-shard-0&authSource=admin&retryWrites=true&w=majority";
-MongoClient.connect(uri, function(err, client) {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
+const MongoClient = require('mongodb').MongoClient;
+const assert = require('assert');
+ 
+// Connection URL
+const url = 'mongodb://localhost:27017';
+ 
+// Database Name
+const dbName = 'myproject';
+ 
+// Use connect method to connect to the server
+MongoClient.connect(url, function(err, client) {
+  assert.equal(null, err);
+  console.log("Connected successfully to server");
+ 
+  const db = client.db(dbName);
+ 
   client.close();
 });
