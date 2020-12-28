@@ -1,0 +1,22 @@
+{
+  "name": "valhalla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mongoRestApp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaoshenchen1988/valhalla.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhaoshenchen1988/valhalla/issues"
+  },
+  "homepage": "https://github.com/zhaoshenchen1988/valhalla#readme",
+  "dependencies": {
+    "mongodb": "^3.6.3"
+  }
+}
